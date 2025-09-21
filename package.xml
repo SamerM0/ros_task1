@@ -9,8 +9,6 @@
 
   <depend>rclpy</depend>
   <depend>std_msgs</depend>
-  <depend>random</depend>
-  <depend>ultrasonic</depend>
   <depend>message_filters</depend>
 
   <test_depend>ament_copyright</test_depend>

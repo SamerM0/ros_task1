@@ -1,7 +1,7 @@
 import rclpy
-import random
 from rclpy.node import Node
 from std_msgs.msg import Int32
+from multi_sensor_validator.ultrasonic_sensor import UltrasonicSensor
 
 class UltrasonicNode(Node):
     def __init__(self):
@@ -23,8 +23,5 @@ def main(args=None):
     rclpy.spin(node)
     rclpy.shutdown()
 
-class UltrasonicSensor():
-    def get_reading(e=None):
-        return random.randint(10,200)
 if __name__ == '__main__':
     main()

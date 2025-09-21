@@ -1,8 +1,7 @@
 import rclpy
-import random
 from rclpy.node import Node
 from std_msgs.msg import Int32
-
+from multi_sensor_validator.infrared_sensor import InfraredSensor
 class InfraredNode(Node):
     def __init__(self):
         super().__init__("infrared_node")
@@ -23,8 +22,5 @@ def main(args=None):
     rclpy.spin(node)
     rclpy.shutdown()
 
-class InfraredSensor():
-    def get_reading(e=None):
-        return random.randint(10,200)
 if __name__ == '__main__':
     main()
